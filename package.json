@@ -1,6 +1,6 @@
 {
   "name": "pulumi-aws-components",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "This package includes reusable Pulumi AWS Components written in Typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
