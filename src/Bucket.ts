@@ -81,6 +81,7 @@ export class Bucket extends CustomComponentResource {
       return undefined;
     }
     return this.bucket.arn.apply((bucketArn) =>
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       this.oai!.iamArn.apply((iamArn) => ({
         sid: 'CloudfrontOriginAccessIdentity',
         actions: ['s3:GetObject'],
