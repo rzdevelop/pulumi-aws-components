@@ -43,7 +43,7 @@ export class RdsDatabase extends CustomComponentResource {
       {
         vpcSecurityGroupIds: [this.securityGroup.securityGroup.id],
         identifier: this.options.name,
-        name: this.options.name,
+        dbName: this.options.dbName,
         username: this.options.username,
         password: this.options.password,
         engineVersion: this.options.engineVersion || '12.7',

@@ -3,7 +3,7 @@ import { rds } from '@pulumi/aws';
 import { CustomComponentResource, CustomComponentResourceOptions } from './Custom';
 
 export interface RdsOptions extends CustomComponentResourceOptions {
-  name: Input<string>;
+  dbName: Input<string>;
   instanceClass?: Input<string>;
   engine?: Input<string>;
   identifier: Input<string>;
@@ -37,7 +37,7 @@ export class Rds extends CustomComponentResource {
         allocatedStorage: this.options.allocatedStorage || 20,
         maxAllocatedStorage: this.options.maxAllocatedStorage || 21,
         vpcSecurityGroupIds: this.options.vpcSecurityGroupIds,
-        dbName: this.options.name,
+        dbName: this.options.dbName,
         multiAz: false,
         publiclyAccessible: true,
         backupRetentionPeriod: 0,
