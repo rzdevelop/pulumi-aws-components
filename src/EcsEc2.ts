@@ -26,7 +26,7 @@ interface MetricAlarm {
 export interface EcsEc2LoadBalancerOptions {
   name: string;
   vpcId: Input<string>;
-  priority: number;
+  priority?: number;
   healthCheckOptions?: EcsEc2LoadBalancerHealthCheckOptions;
 }
 
@@ -330,7 +330,6 @@ export class EcsEc2 extends CustomComponentResource {
     return new lb.ListenerRule(
       this.buildName('listener-rule'),
       {
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         listenerArn,
         priority: this.options.loadBalancerOptions.priority,
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
