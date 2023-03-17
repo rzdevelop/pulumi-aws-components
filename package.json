@@ -32,22 +32,22 @@
   },
   "homepage": "https://github.com/rzdevelop/pulumi-aws-components#readme",
   "devDependencies": {
-    "@types/mocha": "^9.1.1",
+    "@types/mocha": "^10.0.1",
     "@types/node": "^18",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
-    "eslint": "^8.20.0",
-    "eslint-config-prettier": "^8.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "mocha": "^10.0.0",
-    "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.4.0",
     "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@pulumi/aws": "^5.10.0",
-    "@pulumi/awsx": "^0.40.0",
-    "@pulumi/pulumi": "^3.36.0"
+    "@pulumi/aws": "^5.31.0",
+    "@pulumi/awsx": "^1.0.2",
+    "@pulumi/pulumi": "^3.58.0"
   },
   "files": [
     "lib/**/*"
