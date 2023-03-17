@@ -1,6 +1,6 @@
 {
   "name": "rzdevelop-pulumi-aws-components",
-  "version": "3.4.0",
+  "version": "4.0.0",
   "description": "This package includes reusable Pulumi AWS Components written in Typescript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
